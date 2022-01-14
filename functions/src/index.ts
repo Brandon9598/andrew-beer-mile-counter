@@ -18,7 +18,10 @@ app.use(
 
 // /* ----------- HTTP FUNCTIONS ----------- */
 const { getStats, setStats } = require("./handlers/stats");
+const { sendTwilioMessage } = require("./handlers/twilio");
+
 app.get("/stats", getStats);
 app.post("/stats", setStats);
+app.post("/sendTwilioMessage", sendTwilioMessage);
 
 exports.app = functions.https.onRequest(app);

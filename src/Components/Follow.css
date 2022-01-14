@@ -1,10 +1,26 @@
 .follow {
-	background: #aaa;
+	/* background: #aaa; */
 	display: flex;
 	flex-direction: column;
 	text-align: center;
+	padding: 20px;
+	justify-content: center;
 }
 
-.PhoneInput {
-	font-size: 200% !important;
+.follow h1 {
+	margin-bottom: 5px;
+}
+
+.follow input {
+	font-size: 150% !important;
+	max-width: 300px;
+	margin: 0px auto;
+	border-top: 0px;
+	border-left: 0px;
+	border-right: 0px;
+}
+
+.follow button {
+	max-width: 200px;
+	margin: 10px auto;
 }

@@ -28,17 +28,30 @@ function Stats() {
 
 	return (
 		<div className="stats">
-			<h1>Here are my stats so far for the year.</h1>
-			<h2>Total Beers Drank</h2>
-			{beers && <NumberCounter end={beers} delay={2.5} />}
-			<h2>Total Miles Ran</h2>
-			{miles && <NumberCounter end={miles} delay={2.5} />}
-			<h2>
-				{diff < 0
-					? "Number of beers I can drink guilt free"
-					: "Total Miles I Need To Run"}
-			</h2>
-			{checkedDiff && <NumberCounter end={diff} />}
+			<h1>Here are my stats so far for the year</h1>
+			<div className="overall-stats">
+				<div className="stat">
+					<h2>Total Beers Drank</h2>
+					<span>{beers && <NumberCounter end={beers} delay={2.5} />}</span>
+				</div>
+				<div className="stat">
+					<h2>Total Miles Ran</h2>
+					<span>{miles && <NumberCounter end={miles} delay={2.5} />}</span>
+				</div>
+			</div>
+			<div className="running-stats">
+				{diff < 0 ? (
+					<>
+						<h2>"Number of beers Andrew can drink guilt free"</h2>
+						<span>{checkedDiff && <NumberCounter end={diff} />}</span>
+					</>
+				) : (
+					<>
+						<h2>Total Miles Andrew Need To Run</h2>
+						<span>{checkedDiff && <NumberCounter end={diff * -1} />}</span>
+					</>
+				)}
+			</div>
 		</div>
 	);
 }

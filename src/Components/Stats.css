@@ -1,3 +1,9 @@
 .stats {
 	text-align: center;
 }
+
+.overall-stats {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
