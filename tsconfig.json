@@ -18,7 +18,9 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "noImplicitAny": false
+    "noImplicitAny": false,
+    "jsx": "react-jsx",
+    "types": ["react-phone-input-material-ui"]
   },
   "include": [
     "src"

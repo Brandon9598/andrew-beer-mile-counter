@@ -1,0 +1,17 @@
+.Admin {
+	margin: 20px;
+}
+
+.fields {
+	display: flex;
+	flex-direction: row;
+}
+
+.fields .MuiInputBase-root {
+	margin-right: 10px;
+}
+
+.Admin button {
+	margin-top: 10px;
+	width: 430px;
+}

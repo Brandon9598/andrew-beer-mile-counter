@@ -1,27 +1,24 @@
-const functions = require("firebase-functions");
-const admin = require("firebase-admin");
-const express = require("express");
+import * as functions from "firebase-functions";
+import * as express from "express";
 const cors = require("cors");
 const bodyParser = require("body-parser");
 
 // App
 const app = express();
 app.use(
-  cors({
-    origin: true,
-  })
+	cors({
+		origin: true,
+	})
 );
 app.use(
-  bodyParser.urlencoded({
-    extended: true,
-  })
+	bodyParser.urlencoded({
+		extended: true,
+	})
 );
 
-admin.initializeApp();
-
-/* ----------- HTTP FUNCTIONS ----------- */
-const {getStats} = require("./handlers/stats")
-
-app.get("stats", getStats);
+// /* ----------- HTTP FUNCTIONS ----------- */
+const { getStats, setStats } = require("./handlers/stats");
+app.get("/stats", getStats);
+app.post("/stats", setStats);
 
 exports.app = functions.https.onRequest(app);

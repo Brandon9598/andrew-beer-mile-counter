@@ -1,0 +1,10 @@
+.follow {
+	background: #aaa;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.PhoneInput {
+	font-size: 200% !important;
+}
