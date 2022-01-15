@@ -21,8 +21,8 @@ const sendTwilioMessage = async (req: any, res: any) => {
 			console.log("Sending message to phone number", phoneNumber);
 			messagePromises.push(
 				client.messages.create({
-					body: `Andrew is on the move! Andrew has currently ran ${andrewNumbers?.miles} miles and drank a total of ${andrewNumbers?.beers}`,
-					from: "+19842953974",
+					body: `Andrew is on the move! Andrew has currently ran ${andrewNumbers?.miles} miles and drank a total of ${andrewNumbers?.beers} beers`,
+					from: "+14788873167",
 					to: `+${phoneNumber}`,
 				})
 			);

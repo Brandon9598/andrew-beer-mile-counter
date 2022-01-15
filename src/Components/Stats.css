@@ -7,3 +7,8 @@
 	flex-direction: row;
 	justify-content: space-around;
 }
+
+.stats span {
+	font-weight: bold;
+	font-size: 400%;
+}

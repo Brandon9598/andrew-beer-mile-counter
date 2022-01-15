@@ -40,6 +40,7 @@ function Admin() {
 				/>
 				<TextField
 					label="Beers"
+					type="number"
 					value={beers}
 					variant="outlined"
 					onChange={(e) => setBeers(parseInt(e.target.value))}

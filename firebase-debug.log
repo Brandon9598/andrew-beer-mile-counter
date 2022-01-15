@@ -1,26 +1,27 @@
-[debug] [2022-01-14T23:17:42.223Z] ----------------------------------------------------------------------
-[debug] [2022-01-14T23:17:42.225Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\bhancock8\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions
-[debug] [2022-01-14T23:17:42.227Z] CLI Version:   10.1.0
-[debug] [2022-01-14T23:17:42.227Z] Platform:      win32
-[debug] [2022-01-14T23:17:42.227Z] Node Version:  v16.13.2
-[debug] [2022-01-14T23:17:42.230Z] Time:          Fri Jan 14 2022 18:17:42 GMT-0500 (Eastern Standard Time)
-[debug] [2022-01-14T23:17:42.230Z] ----------------------------------------------------------------------
+[debug] [2022-01-15T00:42:03.168Z] ----------------------------------------------------------------------
+[debug] [2022-01-15T00:42:03.174Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\bhancock8\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only functions
+[debug] [2022-01-15T00:42:03.176Z] CLI Version:   10.1.0
+[debug] [2022-01-15T00:42:03.177Z] Platform:      win32
+[debug] [2022-01-15T00:42:03.177Z] Node Version:  v16.13.2
+[debug] [2022-01-15T00:42:03.183Z] Time:          Fri Jan 14 2022 19:42:03 GMT-0500 (Eastern Standard Time)
+[debug] [2022-01-15T00:42:03.185Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2022-01-14T23:17:42.317Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2022-01-14T23:17:42.318Z] > authorizing via signed-in user (brandon9598@gmail.com)
-[debug] [2022-01-14T23:17:42.318Z] [iam] checking project andrew-beer-mile-counter for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
-[debug] [2022-01-14T23:17:42.321Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
-[debug] [2022-01-14T23:17:42.322Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+[debug] [2022-01-15T00:42:03.431Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-01-15T00:42:03.433Z] > authorizing via signed-in user (brandon9598@gmail.com)
+[debug] [2022-01-15T00:42:03.433Z] [iam] checking project andrew-beer-mile-counter for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]
+[debug] [2022-01-15T00:42:03.444Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2022-01-15T00:42:03.446Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
  <request body omitted>
-[debug] [2022-01-14T23:17:42.473Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Fri, 14 Jan 2022 23:17:42 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2022-01-14T23:17:42.488Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/andrew-beer-mile-counter:testIamPermissions  
+[debug] [2022-01-15T00:42:03.686Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sat, 15 Jan 2022 00:42:03 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-15T00:42:03.725Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/andrew-beer-mile-counter:testIamPermissions  
  {"permissions":["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get"]}
-[debug] [2022-01-14T23:17:42.704Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 14 Jan 2022 23:17:42 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=81","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2022-01-14T23:17:42.705Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/andrew-beer-mile-counter/serviceAccounts/andrew-beer-mile-counter@appspot.gserviceaccount.com:testIamPermissions  
+[debug] [2022-01-15T00:42:03.965Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 15 Jan 2022 00:42:03 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=82","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-15T00:42:03.970Z] >>> HTTP REQUEST POST https://iam.googleapis.com/v1/projects/andrew-beer-mile-counter/serviceAccounts/andrew-beer-mile-counter@appspot.gserviceaccount.com:testIamPermissions  
  {"permissions":["iam.serviceAccounts.actAs"]}
-[debug] [2022-01-14T23:17:42.945Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Fri, 14 Jan 2022 23:17:42 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-01-15T00:42:04.283Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 15 Jan 2022 00:42:04 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
 [info] 
 [info] === Deploying to 'andrew-beer-mile-counter'...
 [info] 
 [info] i  deploying functions 
 [info] Running command: npm --prefix "$RESOURCE_DIR" run lint
+[info] Running command: npm --prefix "$RESOURCE_DIR" run build
